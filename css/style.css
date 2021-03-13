@@ -1,0 +1,309 @@
+.navtoggle.responsive li  {
+  display: block;
+}
+header {
+  background-color: #F1D5BC;
+  /*text-align: center;*/
+  padding: 10px;
+  -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  position: relative;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #F0F0F0;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px; /* Sets the font size to 16px */
+  font-weight: 300; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  color: #4a4a4a;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+img {
+  width: 80%;
+}
+
+
+a {
+  color: #ff7f50;
+  text-decoration: none; /* No underlining */
+}
+a:hover {
+  color: #cc6540;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+a:visited { /* visited link */
+  color: #ff7f50;
+}
+a:active { /* selected link */
+  color: #994c30;
+}
+
+a:hover,
+a:focus {
+  color: #cc6540;
+  text-decoration: underline;
+}
+.button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #ff7f50;
+  color: #ffffff; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #994c30; /* width of the border, type, color */
+  transition: 0.2s ;
+    transition-property: opacity;
+}
+.button:hover {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+.button.contact {
+  background-color: transparent;
+  color: #ff7f50;
+  text-transform: uppercase;
+  border: 2px solid #ff7f50;
+}
+
+
+.button.contact:hover {
+  background-color: #ff7f50;
+  color: #ffffff;
+}
+.button:visited { /* visited button link */
+color: #ffffff;
+}
+selector {
+  position: relative;
+}
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  .row::after {
+  content: "";
+  clear: both;
+  display: table;
+  }
+}
+
+#work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+#hero h1 {
+  text-align: center; /* Centers text */
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+
+}
+/*nav > ul > li {
+  display: inline-block;
+}*/
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+#hero {
+  background-color: #ffe4c4;
+  padding: 20px 0;
+  /*display: inline-block;
+  width: 100%;*/
+}
+svg {width:50%;height:auto}
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  img {
+    width: 100%;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+  nav > ul > li {
+  display: inline-block;
+}
+.navtoggle li:last-child {
+  display: none;
+}
+  header {
+  text-align: unset;
+  padding: 20px 0 13px;
+}
+nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+  .col-md-6 {
+  width: 50%;
+
+}
+
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+
+img {
+  width: 100%;
+}
+  nav > ul > li {
+  display: inline-block;
+}
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+.navtoggle li:last-child {
+  display: none;
+}
+  header {
+  text-align: unset;
+  padding: 20px 0 13px;
+}
+nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+  .col-md-7 {
+  width: 60%;
+}
+.col-md-5 {
+width: 40%;
+}
+.container {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
+/* ==============================
+Extra-large devices (1920px or larger)
+================================= */
+@media only screen and (min-width: 1920px) {
+}
+.Centeralign {text-align: center;}
+
+[class*="col-"] {
+  float: right;padding: 20px
+}
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes color-change {
+  from {fill: #edc655;}
+  to {fill: #f76414;}
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+@keyframes crossrotate {
+  {transform: rotate(90deg);}
+
+}
+
+.Cross {
+  animation-duration: 4s;
+  animation-name: crossrotate;
+  animation-iteration-count: infinite;
+
+}
+body {
+  background-color: #F0F0F0;
+
+}
+
+@keyframes crossmove{
+  from {transform: translate(150,150px);}
+  to {transform: translate(200px,50px);}
+}
+
+.Cross {
+  animation-duration: 30s;
+  animation-name: crossmove;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+.navtoggle, .navtoggle.responsive {
+position: relative;
+}
+
+
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
