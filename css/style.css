@@ -75,7 +75,7 @@ a:focus {
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #ff7f50;
-  color: #ffffff; /* needed to override the default link color */
+  color: #3a3a3a; /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
@@ -236,10 +236,7 @@ Extra-large devices (1920px or larger)
   animation-timing-function: linear;
 }
 
-@keyframes color-change {
-  from {fill: #edc655;}
-  to {fill: #f76414;}
-}
+
 
 @keyframes cloud-move {
   from {transform: translate(0,50px);}
@@ -253,10 +250,7 @@ Extra-large devices (1920px or larger)
   animation-direction: alternate;
   animation-timing-function: linear;
 }
-@keyframes crossrotate {
-  {transform: rotate(90deg);}
 
-}
 
 .Cross {
   animation-duration: 4s;
@@ -270,8 +264,8 @@ body {
 }
 
 @keyframes crossmove{
-  from {transform: translate(150,150px);}
-  to {transform: translate(200px,50px);}
+from {transform: translate(150,150px);}
+to {transform: translate(200px,50px);}
 }
 
 .Cross {
