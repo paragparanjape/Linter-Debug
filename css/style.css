@@ -114,8 +114,7 @@ selector {
   .row::after {
   content: "";
   clear: both;
-  display: table;
-  }
+  display: table;}
 }
 
 #work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
@@ -264,7 +263,7 @@ body {
 }
 
 @keyframes crossmove{
-from {transform: translate(150,150px);}
+from {transform: translate(150px,150px);}
 to {transform: translate(200px,50px);}
 }
 
